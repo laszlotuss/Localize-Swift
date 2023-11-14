@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+#if !os(watchOS)
+
 // MARK: - UILabel localize Key extention for language in story board
 
 @IBDesignable public extension UILabel {
@@ -90,3 +92,5 @@ import UIKit
         }
     }
 }
+
+#endif
